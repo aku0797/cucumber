@@ -1,12 +1,12 @@
 package pages;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 public class CommonsPage {
-
     public CommonsPage (){
             PageFactory.initElements(Driver.getDriver(), this);
 
@@ -21,6 +21,7 @@ public class CommonsPage {
     public WebElement generate_button;
 
 
-
+@FindBy (xpath = "(//span [@class=\"name svelte-1gki2rv\"])[5]")
+    public WebElement vegan;
 
 }
